@@ -5,8 +5,9 @@ public class Driver {
     public static void main(String[] args) {
 
         try{
+            Class.forName("com.mysql.jdbc.Driver");
             //Get connection
-            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ImageGallery", "root", "1234" );
+            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/imagegallery", "root", "1234" );
 
             //Create statement
             Statement myStmt = myConn.createStatement();
@@ -20,7 +21,7 @@ public class Driver {
             }
 
 
-        } catch (SQLException e) {
+        } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
     }
