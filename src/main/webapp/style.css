@@ -16,3 +16,29 @@ div {
 .gallery img {
     width: 100%;
 }
+
+p{
+    background-color: black;
+    color: white;
+}
+
+
+.im1:hover{
+    opacity: 70%;
+}
+.im2:hover{
+    opacity: 70%;
+}
+.im3:hover{
+    opacity: 70%;
+}
+.im4:hover{
+    opacity: 70%;
+}
+.im5:hover{
+    opacity: 70%;
+}
+.im6:hover{
+    opacity: 70%;
+}
+
