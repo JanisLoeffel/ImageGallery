@@ -6,19 +6,19 @@ public class table {
 
     public static void main(String[] args) {
 
-        try{
+        try {
             //Get connection
-            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/ImageGallery", "root", "1234" );
+            Connection myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/imagegallery", "root", "1234" );
 
             //Create statement
             Statement myStmt = myConn.createStatement();
 
             //Execute SQL query
-            ResultSet myRs = myStmt.executeQuery("select * from images where id = '1'");
+            ResultSet rs = myStmt.executeQuery("select * from images where id = '1'");
 
             //process result
-            while (myRs.next()) {
-                System.out.println(myRs.getBlob("image"));
+            while (rs.next()) {
+                System.out.println(rs.getInt("id"));
             }
 
 
