@@ -16,12 +16,12 @@ div {
 .gallery img {
     width: 100%;
 }
-
+/**
 p{
     background-color: black;
     color: white;
 }
-
+*/
 
 .im1:hover{
     opacity: 70%;
@@ -41,4 +41,14 @@ p{
 .im6:hover{
     opacity: 70%;
 }
+
+
+
+.submit:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
 
