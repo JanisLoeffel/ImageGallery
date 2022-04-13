@@ -15,9 +15,11 @@ function showImageFull(input) {
 
     // Get the <span> element that closes the modal
     var span = document.getElementById("close0" + input)[0];
+    console.log(span)
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
+        console.log("clicked")
         modal.style.display = "none";
     }
 }
