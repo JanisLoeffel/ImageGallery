@@ -54,7 +54,7 @@ p{
 }
 
 /* Caption of Modal Image */
-#caption {
+.caption {
     margin: auto;
     display: block;
     width: 80%;
